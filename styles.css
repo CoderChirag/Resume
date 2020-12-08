@@ -1,0 +1,588 @@
+body{
+    font-family: serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    margin-bottom: 50px;
+}
+nav a{
+    color: white !important;
+    transition: font-size 0.5s ease-in-out;
+}
+nav a:hover{
+    font-size: 1.5rem;
+}
+nav li{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Body Header */
+
+#body-header{
+    height: auto;
+    opacity: 0.8;
+    background-image: url("images/macbook-mouse.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+}
+
+
+/* Horizontal-list */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 10px 16px 10px 10px;
+}
+
+.horizontal-list li a{
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Name and Social Icons */
+
+#name-social-container{
+    margin-top: 15vh;
+}
+
+#my-name{
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a{
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    color: white !important;
+}
+
+.social-icons li a:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+/* Sections */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n +1){
+    background-color: white;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* About Section */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 6px 4px grey;
+}
+
+#about-text{
+    width: 65%;
+    margin: 10vh auto;
+    text-align: justify;
+    font-size: 1.1em;
+    color: grey;
+}
+
+#about-text i{
+    color: #2857a4;
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Common Margin Classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+
+/* Skills Section */
+.skills-display{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill-progress{
+    background-color: lightgrey;
+    width: 7rem;
+    height: 1.4rem;
+    border-radius: 0.8rem;
+    margin: 25px;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name{
+    padding-left: 10px;
+}
+.skill-name span{
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -14.2%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+    transform: scale(3);
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+/* Portfolio Section */
+
+#portfolio-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.portfolio-image-container{
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portfolio-image-container img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.5rem;
+}
+.portfolio-image-container:hover{
+    box-shadow: 0 0 20px #74adc8;
+}
+.portfolio-image-container:hover .portfolio-details{
+    background-color: #80808078;
+    color: white;
+}
+
+/* Contact Section */
+
+#contact{
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to right, #2857a4, #403066);
+    padding-bottom: 50px;
+}
+.contact-heading span{
+    color: white;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.msg-container{
+    width: 30%;
+    text-align: center;
+}
+
+.msg-container input, textarea{
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1.2rem;
+}
+
+.msg-container button{
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.msg-container button:hover{
+    background-color: #403066;
+}
+
+.msg-container input:focus, textarea:focus{
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+}
+
+.contact-details{
+    width: 30%;
+    overflow-wrap: break-word;
+}
+.contact-details p, .contact-details span{
+    color: #B4C0C8;
+    display: block;
+}
+.contact-details span{
+    margin-top: 15px;
+}
+.contact-details span i{
+    color: white;
+    margin-right: 5px;
+}
+
+/* Common color classes */
+
+.mb-blue{
+    background-color: #2857a4;
+}
+.mb-orange{
+    background-color: #EC4D1C;
+}
+.mb-grey{
+    background-color: #93738C;
+}
+.mb-green{
+    background-color: #0B8176;
+}
+
+/* Percentage Classes */
+
+.twenty-five-percent{
+    width: 25%;
+    height: inherit;
+}
+.ninety-percent{
+    width: 90%;
+    height: inherit;
+}
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+
+/* For Ipad Pro */
+@media only screen and (max-width: 1024px){
+    #my-image{
+        margin-top: -11vh;
+    }
+}
+
+/* For Ipad */
+@media only screen and (max-width: 768px){
+    #my-image{
+        margin-top: -12vh;
+    }
+}
+/* For General Mobiles */
+@media  only screen and (max-width: 600px){
+    html{
+        font-size: 15px;
+    }
+    #name-social-container{
+        margin-top: 8vh;
+    }
+
+    #my-name{
+        font-size: 3.5rem;
+    }
+    #my-image{
+        margin-top: -20vh;
+    }
+    #timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left: -10% !important;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-container > div{
+        width: 70%;
+        margin: 15px;
+    }
+    #we{
+        font-size: 1em;
+    }
+}
+
+/* For Pixel2 XL */
+@media only screen and (max-width: 412px){
+    #my-image{
+        margin-top: -15vh;
+    }
+}
+
+/* For Iphone5/6/7 and below */
+@media only screen and (max-width: 350px){
+    #name-social-container{
+        margin-top: -2vh;
+    }
+    #we{
+        font-size: 0.8em;
+    }
+}
+
+/* For Galaxy Fold */
+@media only screen and (max-width: 280px){
+    #name-social-container{
+        margin-top: 5vh;
+    }
+    #my-name{
+        font-size: 2.5rem;
+    }
+    #my-image{
+        margin-top: -17vh;
+    }
+    #we{
+        font-size: 0.7em;
+    }
+    .timeline-logo{
+        left: -4px;
+    }
+    #timeline-divider .timeline-traveller{
+        transform: scale(1.5);
+    }
+}
+
+/* For Ipad Pro Landscape */
+@media screen and (orientation: landscape) and (max-height: 1366px) and (width: 1024px){
+    #my-image{
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 520px){
+    #name-social-container{
+        margin-top: -14vh;
+    }
+    #my-name{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 415px){
+    #name-social-container{
+        margin-top: -10vh;
+    }
+    #my-image{
+        margin-top: -30vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 415px) and (min-width: 820px){
+    #name-social-container{
+        margin-top: 0vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 360px){
+    #name-social-container{
+        margin-top: -15vh;
+    }
+    #my-image{
+        margin-top: -40vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 320px){
+    #name-social-container{
+        margin-top: -12vh;
+    }
+    #my-name{
+        font-size: 2.2rem;
+    }
+}
+/* For Galaxy Fold Landscape */
+@media screen and (orientation: landscape) and (max-height: 280px){
+    #my-image{
+        margin-top: -47vh;
+    }
+}
